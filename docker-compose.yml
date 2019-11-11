@@ -1,0 +1,10 @@
+version: '2'
+services:
+  line-drawing-twitter-bot:
+    container_name: line-drawing-twitter-bot
+    image: prokuma/line-drawing-twitter-bot:latest
+    restart: always
+    privileged: true
+    tty: true
+    volumes:
+    - "./information.json:/root/line-drawing-twitter-bot/information.json"
